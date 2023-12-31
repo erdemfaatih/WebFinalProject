@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="add_course.css">
+</head>
+
+<body>
+    <header>
+        Student Management System - Add Course
+    </header>
+
+    <div class="container">
+        <form id="addCourseForm">
+            <h1>Add Course</h1>
+
+            <label for="courseName">Course Name:</label>
+            <input type="text" id="courseName" name="courseName" required>
+
+            <label for="gradingScale">Grade Scale:</label>
+            <input type="text" id="gradingScale" name="gradingScale" placeholder="10 or 7" required>
+
+            <button type="button" onclick="addCourse()">Add Course</button>
+
+            <button onclick="goToHomePage()">Home Page</button>
+        
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

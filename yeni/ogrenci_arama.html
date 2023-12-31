@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="students.css">
+</head>
+
+<body>
+    <header>
+        Student Management System - Student Search
+    </header>
+
+    <div class="container">
+        <h2>Student Search</h2>
+
+        <!-- Öğrenci adı girişi için form -->
+        <form onsubmit="searchStudents(); return false;">
+            <label for="searchName">Student Name:</label>
+            <input type="text" id="searchName" name="searchName" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Arama sonuçları için liste -->
+        <ul id="searchResults">
+            <!-- Sonuçlar buraya eklenir -->
+        </ul>
+
+        <!-- Anasayfaya geri dön butonu -->
+        <button onclick="goToHomePage()">Home Page</button>
+    </div>
+
+    <script src="add_student.js"></script>
+
+</body>
+
+</html>

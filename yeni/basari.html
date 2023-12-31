@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="basari.css">
+</head>
+
+<body>
+    <header>
+        Success Status
+    </header>
+
+    <div class="container">
+        <h2>Course Success Check</h2>
+
+        <label for="courseSelect">Choose Course</label>
+        <select id="courseSelect" name="courseSelect">
+            <!-- Önceden kayıtlı dersler burada listelenecek -->
+        </select>
+
+        <button onclick="checkSuccess()">Successful Students</button>
+        <button onclick="checkFailure()">Failing Students</button>
+        
+
+        <ul id="resultList">
+            <!-- Başarı/Başarısız durumu sonuçları buraya eklenecek -->
+        </ul>
+
+        <button onclick="goToHomePage()">Home Page</button>
+    </div>
+
+    <script src="add_student.js"></script>
+
+</body>
+
+</html>

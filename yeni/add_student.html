@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="add_student.css">
+</head>
+
+<body>
+    <header>
+        Student Management System - Add Student
+    </header>
+
+    <div class="container">
+        <form>
+            <label for="courseSelect">Select Course :</label>
+            <select id="courseSelect">
+                
+            </select>
+
+            <label for="studentId">Student ID :</label>
+            <input type="text" id="studentId" required>
+
+            <label for="firstName">Student Name:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Student Surname :</label>
+            <input type="text" id="lastName" required>
+
+            <label for="midtermGrade">Midterm Grade :</label>
+            <input type="text" id="midtermGrade" required>
+
+            <label for="finalGrade">Final Grade :</label>
+            <input type="text" id="finalGrade" required>
+
+            <button type="button" onclick="addStudent()">Add Student</button>
+        </form>
+
+
+        <button style="margin-top: 10px;" onclick="goToHomePage()">Home Page</button>
+    </div>
+
+    <script src="add_student.js"></script>
+</body>
+
+</html>
